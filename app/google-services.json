@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "569951630397",
+    "project_id": "diabetesprediction-de09f",
+    "storage_bucket": "diabetesprediction-de09f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569951630397:android:b84ddd9d3284e20d472654",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569951630397-bfsmspfgknsa1ognsnial8sv2frjtp2m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "17b6a24b1eddf99cffe6d1111793b3c31e8a955f"
+          }
+        },
+        {
+          "client_id": "569951630397-knk69uu74a0g68q3ki8t09egafevb3b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByzFlgoJzE7lRrX5rk_pwkY9iBE5CiuxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569951630397-knk69uu74a0g68q3ki8t09egafevb3b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

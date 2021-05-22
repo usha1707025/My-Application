@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PredictDiabetes</string>
+    <string name="des1">will provide diabetes risk.</string>
+    <string name="des2">Help you to prevent diabetes</string>
+</resources>
