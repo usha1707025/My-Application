@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginPage extends AppCompatActivity implements View.OnClickListener {
     private EditText loginEmail, loginPassword;
-    private TextView signUpText;
+    private TextView signUpText,resetPassword;
     private Button login;
     private FirebaseAuth mAuth;
 
@@ -34,9 +34,12 @@ public class LoginPage extends AppCompatActivity implements View.OnClickListener
 
         loginEmail=findViewById(R.id.loginEmailId);
         loginPassword=findViewById(R.id.loginPassword);
+        resetPassword=(TextView)findViewById(R.id.resetPassword);
         login=findViewById(R.id.loginButton);
         signUpText=findViewById(R.id.signUpTextId);
         progressBar=findViewById(R.id.progressBarId);
+
+        resetPassword.setOnClickListener(this);
         signUpText.setOnClickListener(this);
         login.setOnClickListener(this);
 
@@ -46,16 +49,20 @@ public class LoginPage extends AppCompatActivity implements View.OnClickListener
     public void onClick(View v) {
        switch (v.getId()){
            case R.id.loginButton:
-               userlogin();
+               userLogin();
               break;
            case R.id.signUpTextId:
                Intent intent = new Intent(getApplicationContext(),SignUp.class);
                startActivity(intent);
                break;
+           case R.id.resetPassword:
+               Intent intent1 = new Intent(getApplicationContext(),ResetPassword.class);
+               startActivity(intent1);
+               break;
        }
     }
 
-    private void userlogin() {
+    private void userLogin() {
         String email=loginEmail.getText().toString().trim();
         String pass=loginPassword.getText().toString().trim();
         if(email.isEmpty()){

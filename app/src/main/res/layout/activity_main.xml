@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawerId"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -21,7 +22,7 @@
         android:layout_marginLeft="20sp"
         />
     <EditText
-        android:id="@+id/age"
+        android:id="@+id/userAge"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:padding="15dp"
@@ -35,6 +36,7 @@
         />
 
     <RadioGroup
+        android:id="@+id/radioGroupId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -48,22 +50,25 @@
             android:layout_marginRight="12dp"
             android:textSize="20sp"/>
         <RadioButton
+            android:id="@+id/male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Male"
             android:layout_marginRight="12dp"
-            android:textSize="20sp"/>
+            android:textSize="17sp"/>
         <RadioButton
+            android:id="@+id/female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female"
             android:layout_marginRight="12dp"
-            android:textSize="20sp"/>
+            android:textSize="17sp"/>
         <RadioButton
+            android:id="@+id/other"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Other"
-            android:textSize="20sp"/>
+            android:textSize="17sp"/>
     </RadioGroup>
     <TextView
         android:layout_width="wrap_content"
@@ -91,6 +96,7 @@
             android:padding="15dp"
             android:singleLine="true"
             android:textColor="#000"
+            android:textSize="17sp"
             android:textCursorDrawable="@null" />
 
         <EditText
@@ -108,7 +114,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/width"
+        android:id="@+id/weight"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:padding="15dp"
@@ -127,6 +133,7 @@
         android:padding="15dp"
         android:hint="Diastolic blood pressure (0-122 mm Hg)"
         android:textColor="#000"
+        android:textSize="17sp"
         android:textCursorDrawable="@null"
         android:singleLine="true"
         android:inputType="number"
@@ -143,6 +150,7 @@
         android:cursorVisible="true"
         android:hint="Plasma glucose concentration(0-199 mg/dL)"
         android:inputType="number"
+        android:textSize="15sp"
         android:padding="15dp"
         android:singleLine="true"
         android:textColor="#000"
@@ -154,6 +162,7 @@
         android:padding="15dp"
         android:hint="Triceps skin fold thickness (0-99 mm)"
         android:textColor="#000"
+        android:textSize="17sp"
         android:textCursorDrawable="@null"
         android:singleLine="true"
         android:inputType="number"
@@ -167,6 +176,7 @@
         android:padding="15dp"
         android:hint="2 hour serum insulin (mu U/ml)"
         android:textColor="#000"
+        android:textSize="17sp"
         android:textCursorDrawable="@null"
         android:singleLine="true"
         android:inputType="number"
@@ -187,6 +197,7 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/resetButtonId"
             android:layout_width="173dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20sp"
@@ -196,6 +207,7 @@
             android:background="@drawable/radius"/>
 
         <Button
+            android:id="@+id/submitButtonId"
             android:layout_width="173dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25sp"
@@ -206,6 +218,8 @@
             />
 
     </LinearLayout>
+
+
 
 
 </LinearLayout>
