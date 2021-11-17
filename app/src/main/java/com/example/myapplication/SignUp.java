@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -32,7 +34,10 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
         mAuth = FirebaseAuth.getInstance();
 
-        progressBar=findViewById(R.id.progressBarId);
+        progressBar=findViewById(R.id.signupProgressBarId);
+        int colorCode= Color.parseColor("#006400");
+        progressBar.setIndeterminateTintList(ColorStateList.valueOf(colorCode));
+
         signUpEmail=findViewById(R.id.signUpnEmailId);
         signUpPassword=findViewById(R.id.signUpPassword);
         signUp=findViewById(R.id.signUpButton);

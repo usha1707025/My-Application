@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -38,6 +40,8 @@ public class LoginPage extends AppCompatActivity implements View.OnClickListener
         login=findViewById(R.id.loginButton);
         signUpText=findViewById(R.id.signUpTextId);
         progressBar=findViewById(R.id.progressBarId);
+        int colorCode= Color.parseColor("#006400");
+        progressBar.setIndeterminateTintList(ColorStateList.valueOf(colorCode));
 
         resetPassword.setOnClickListener(this);
         signUpText.setOnClickListener(this);
